@@ -1,19 +1,12 @@
+/* BASIC RESET */
+
 * {
     box-sizing: border-box;
-    overflow-x: hidden;
     margin: 0;
 }
 
-ul {
-    list-style: none;
-}
 
-p {
-    line-height: 1.5rem;
-    text-align: justify;
-    white-space: pre-wrap;
-    font-family: non-serif;
-}
+/* MAIN STRUCTURE */
 
 body {
     width: 100%;
@@ -47,13 +40,54 @@ footer {
     border: 1px solid gray
 }
 
-img {
+
+/* ELEMENTS */
+
+ul {
+    list-style: none;
+}
+
+
+/* COMPONENTS */
+
+    /* HEADER */
+
+header ul {
+    display: block
+}
+
+header ul li {
+    display: inline-block
+}
+
+header ul li:not(:first-child):before {
+    content: '\2605';
+    margin: auto 0.5rem;
+    color: red
+}
+
+header em {
+    font-weight: 700;
+    font-style: normal
+}
+
+    /* RECIPE */
+
+article > p {
+    line-height: 1.5rem;
+    text-align: justify;
+    white-space: pre-wrap;
+    font-family: non-serif;
+}
+
+    /* IMAGES */
+aside img {
     width: 100%;
     height: auto;
     opacity: 1;
     transition: opacity 0.75s ease
 }
 
-img:hover{
+aside img:hover{
     opacity: 0.5;
 }
