@@ -1,9 +1,12 @@
 /* BASIC RESET */
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
+
 /* MAIN STRUCTURE */
+
 body {
   width: 100%;
   height: 100%;
@@ -11,16 +14,19 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 header {
   width: 100%;
   padding: 1rem;
   border: 1px solid red;
   background: repeating-linear-gradient(-55deg, rgba(125, 25, 125, 0.3), rgba(125, 25, 125, 0.3) 1px, #FFF 1px, #FFF 10px);
 }
+
 header ul {
   display: block;
   list-style: none;
 }
+
 header ul li {
   display: inline-block;
 }
